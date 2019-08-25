@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+.home {
+    background-image: url("./csgo.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.terrorist {
+    background-image: url("./terror.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.soldier {
+    background-image: url("./soldier.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bg-overlay {
+    background:rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: #000;
+    border-radius: 4px;
+}
+
+.content>input {
+    width: 80%;
+    margin: 1.5rem auto;
+    color: #fff;
+    background-color: transparent;
+    font-size: 1rem;
+    border: 0.5px solid #e0e0e0;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.content>input:focus {
+    outline: none;
+}
+
+.content>button {
+    margin: 1.5rem auto;
+    display: block;
+    background-color: transparent;
+    font-size: 1rem;
+    border: 0.5px solid #e0e0e0;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    color: white;
+}
+
+.content>button>li {
+    list-style-type: none;
+}

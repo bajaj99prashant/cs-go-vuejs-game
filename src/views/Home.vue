@@ -1,18 +1,36 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div class="bg-overlay">
+      <div class="content">
+        <input type="text" v-model="username">
+        <input type="password" v-model="password">
+        <button @click="validate">Submit</button>
+        <div v-if="show"></div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
 
 export default {
   name: "home",
-  components: {
-    HelloWorld
+  data() {
+    return {
+      show: false,
+      username: null,
+      password: null
+    }
+  },
+  methods: {
+    validate() {
+      if(this.username == 'terrorist'){
+        this.$router.push({ name: 'Terrorist' })
+      }
+      else if(this.username == 'soldier'){
+        this.$router.push({ name: 'Soldier' })
+      }
+    }
   }
 };
 </script>
